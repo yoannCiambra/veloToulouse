@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Velib Toulouse</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.js'></script>
+<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.css' rel='stylesheet' />
+    
+</head>
+
+<body>
+    
+<header>
+    <h1>RÉSERVER VOTRE VELIB A TOULOUSE</h1>
+    <h2>Comment l'utiliser ?</h2>
+</header>
+    
+    <section>
+         
+  <!-- SLIDER -->
+  <div class="slider">
+
+    <!-- BUTTONS -->
+
+      <i class="fas fa-chevron-right"></i>
+      <i class="fas fa-chevron-left"></i>
+      <i class="fas fa-pause" id="pause-slider" pausing></i>
+      <i class="fas fa-play" id="play-slider"></i>
+      
+    <!-- SLIDES --> 
+    <div class="slide slide-active slide-1">
+        <p><span class="number">1</span>Sélectionner votre station</p>
+    </div>
+    <div class="slide slide-2">
+        <p><span class="number">2</span>Effectuer votre réservation</p>
+    </div>
+    <div class="slide slide-3">
+        <p><span class="number">3</span>Votre vélib est prêt !</p>
+    </div>
+    
+  </div>
+        
+<div id='map'></div>
+
+        
+  
+    </section>
+    
+  <script src="diapo.js"></script>
+  <script src="ajax.js"></script>
+  <script src="map.js"></script>
+<!--  <script src="toulouse.csv"></script>-->
+<!--  <script src="toulouse.json"></script>-->
+</body>
+</html>
